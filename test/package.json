@@ -1,0 +1,23 @@
+{
+  "name": "pre-submit-validation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-checkout": "npx cypress open cypress/integration/payments_checkout.js",
+    "test-videos": "testcafe chrome video_lessons.js",
+    "test-lessons": "testcafe chrome lessons_tests.js",
+    "test-update": "testcafe chrome update_account.js",
+    "test-api": "node ./node_modules/mocha/bin/mocha api-tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "cypress": "^9.5.1",
+    "mocha": "^9.2.1",
+    "supertest": "^6.1.3",
+    "testcafe": "^1.8.4"
+  }
+}
